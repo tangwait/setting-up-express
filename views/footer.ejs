@@ -1,0 +1,13 @@
+<footer class="footer">
+    <p>&copy; <%= new Date().getFullYear() %> My Website. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:contact@mywebsite.com">contact@mywebsite.com</a></p>
+    <ul>
+        <% for (let i = 0; i < links.length; i++) { %>
+          <li>
+            <a href="<%= links[i].href %>">
+              <span> <%= links[i].text %> </span>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+</footer>
